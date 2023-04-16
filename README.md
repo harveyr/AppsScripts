@@ -1,4 +1,4 @@
 # AppsScripts
 
-My experimentations with Google Workspace
+Playing with Google Workspace
 [Apps Script](https://developers.google.com/apps-script).
