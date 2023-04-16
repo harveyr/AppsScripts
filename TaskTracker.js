@@ -6,6 +6,8 @@
  *
  * This is a "bound script" — it's used just within the one sheet.
  * Docs: https://developers.google.com/apps-script/guides/bound
+ *
+ * Source: https://github.com/harveyr/AppsScripts/blob/main/TaskTracker.js
  */
 
 const CHECK_COMPLETE = "✔️"
