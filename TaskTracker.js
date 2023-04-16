@@ -1,4 +1,12 @@
-// https://developers.google.com/apps-script/guides/bound
+/**
+ * Add some functionality to help me use a Google Sheet as my task manager.
+ *
+ * Highly experimental, but looks promising. This was pretty easy and fun to
+ * throw together!
+ *
+ * This is a "bound script" — it's used just within the one sheet.
+ * Docs: https://developers.google.com/apps-script/guides/bound
+ */
 
 const CHECK_COMPLETE = "✔️"
 
