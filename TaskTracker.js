@@ -12,6 +12,8 @@
 
 const CHECK_COMPLETE = "✔️"
 
+const TASK_NOTES_FOLDER_ID = "11761DZMMmHJq4vYh-fB5JYGYNI8WPaAz"
+
 /**
  * Set up the custom menu on open.
  */
@@ -119,7 +121,13 @@ function createTaskNote() {
   const doc = DocumentApp.create(`[task note] ${taskName}`)
   const docUrl = doc.getUrl()
 
-  // Add the link.
+  // Move the doc to my folder.
+  // See https://stackoverflow.com/a/31754059
+  const docFile = DriveApp.getFileById(doc.getId())
+  DriveApp.getFolderById(TASK_NOTES_FOLDER_ID).addFile( docFile )
+  DriveApp.getRootFolder().removeFile(docFile)
+
+  // Add the link to the sheet.
   targetRange.setValue(docUrl)
 }
 
