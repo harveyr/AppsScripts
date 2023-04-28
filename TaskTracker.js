@@ -79,7 +79,7 @@ function findHeaderColumnNumber(sheet, name) {
     return obj === name
   })
 
-  if (!linkColIdx) {
+  if (linkColIdx === -1) {
     throw new Error(`Couldn't find header with name: ${name}`)
   }
 
